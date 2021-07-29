@@ -1,0 +1,637 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 750  1000 0    197  ~ 0
+USB 2.0
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 60D529C7
+P 3950 4100
+F 0 "J2" H 4057 4967 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 4000 4875 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 4100 4100 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4100 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0166
+U 1 1 60D529CD
+P 4625 3375
+F 0 "#PWR0166" H 4625 3225 50  0001 C CNN
+F 1 "VBUS" H 4640 3548 50  0000 C CNN
+F 2 "" H 4625 3375 50  0001 C CNN
+F 3 "" H 4625 3375 50  0001 C CNN
+	1    4625 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5000 3950 5050
+$Comp
+L power:GND #PWR0167
+U 1 1 60D529D7
+P 4375 5100
+F 0 "#PWR0167" H 4375 4850 50  0001 C CNN
+F 1 "GND" H 4380 4927 50  0000 C CNN
+F 2 "" H 4375 5100 50  0001 C CNN
+F 3 "" H 4375 5100 50  0001 C CNN
+	1    4375 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4300 4650 4250
+Wire Wire Line
+	4550 4300 4650 4300
+Wire Wire Line
+	4650 4100 4650 4050
+Wire Wire Line
+	4550 4100 4650 4100
+Wire Wire Line
+	4550 4000 4650 4000
+Wire Wire Line
+	4550 4200 4650 4200
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 60D529E6
+P 4925 3500
+F 0 "FB2" V 5075 3600 50  0000 C CNN
+F 1 "Ferrite_Bead" V 5000 3750 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 4855 3500 50  0001 C CNN
+F 3 "~" H 4925 3500 50  0001 C CNN
+	1    4925 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5075 3500 5175 3500
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 60D529ED
+P 4150 5050
+F 0 "FB1" V 4350 5025 50  0000 C CNN
+F 1 "Ferrite_Bead" V 4000 5325 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 4080 5050 50  0001 C CNN
+F 3 "~" H 4150 5050 50  0001 C CNN
+	1    4150 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 5050 4000 5050
+Connection ~ 3950 5050
+Wire Wire Line
+	4300 5050 4375 5050
+Wire Wire Line
+	4375 5050 4375 5100
+Wire Wire Line
+	4550 3500 4625 3500
+Wire Wire Line
+	4625 3500 4625 3375
+Connection ~ 4625 3500
+Wire Wire Line
+	4625 3500 4725 3500
+Connection ~ 4650 4050
+Wire Wire Line
+	4650 4050 4650 4000
+Connection ~ 4650 4250
+Wire Wire Line
+	4650 4250 4650 4200
+NoConn ~ 4550 4600
+NoConn ~ 4550 4700
+$Comp
+L Device:R R9
+U 1 1 60D52A23
+P 4750 4525
+F 0 "R9" V 4675 4525 50  0000 C CNN
+F 1 "5K1" V 4750 4525 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 4680 4525 50  0001 C CNN
+F 3 "~" H 4750 4525 50  0001 C CNN
+	1    4750 4525
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60D52A29
+P 4925 4525
+F 0 "R11" V 4850 4525 50  0000 C CNN
+F 1 "5K1" V 4925 4525 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 4855 4525 50  0001 C CNN
+F 3 "~" H 4925 4525 50  0001 C CNN
+	1    4925 4525
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 60D52A2F
+P 4925 4725
+F 0 "#PWR0169" H 4925 4475 50  0001 C CNN
+F 1 "GND" H 4930 4552 50  0000 C CNN
+F 2 "" H 4925 4725 50  0001 C CNN
+F 3 "" H 4925 4725 50  0001 C CNN
+	1    4925 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 60D52A35
+P 4750 4725
+F 0 "#PWR0170" H 4750 4475 50  0001 C CNN
+F 1 "GND" H 4755 4552 50  0000 C CNN
+F 2 "" H 4750 4725 50  0001 C CNN
+F 3 "" H 4750 4725 50  0001 C CNN
+	1    4750 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4675 4750 4725
+Wire Wire Line
+	4925 4675 4925 4725
+Wire Wire Line
+	4550 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 4375
+Wire Wire Line
+	4550 3700 4925 3700
+Wire Wire Line
+	4925 3700 4925 4375
+$Comp
+L custom_parts_library:TCR2EF33 U2
+U 1 1 60D52A41
+P 8700 3100
+F 0 "U2" H 8600 3625 50  0000 C CNN
+F 1 "TCR2EF33" H 8600 3534 50  0000 C CNN
+F 2 "custom_footprint_library:TCR2EF33_SOT25" H 7900 3800 50  0001 C CNN
+F 3 "" H 7900 3800 50  0001 C CNN
+	1    8700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0171
+U 1 1 60D52A47
+P 8200 2500
+F 0 "#PWR0171" H 8200 2350 50  0001 C CNN
+F 1 "+5V" H 8215 2673 50  0000 C CNN
+F 2 "" H 8200 2500 50  0001 C CNN
+F 3 "" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2800 8250 2800
+$Comp
+L power:GND #PWR0172
+U 1 1 60D52A4E
+P 9000 3050
+F 0 "#PWR0172" H 9000 2800 50  0001 C CNN
+F 1 "GND" H 9005 2877 50  0000 C CNN
+F 2 "" H 9000 3050 50  0001 C CNN
+F 3 "" H 9000 3050 50  0001 C CNN
+	1    9000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3050 9000 3000
+Wire Wire Line
+	9000 3000 8950 3000
+$Comp
+L Device:R R10
+U 1 1 60D52A56
+P 8050 2800
+F 0 "R10" V 7950 2800 50  0000 C CNN
+F 1 "1K" V 8050 2800 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 7980 2800 50  0001 C CNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+	1    8050 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8200 2500 8200 2600
+Wire Wire Line
+	8250 3000 8050 3000
+Wire Wire Line
+	8050 2650 8050 2600
+Wire Wire Line
+	8050 2600 8200 2600
+Connection ~ 8200 2600
+Wire Wire Line
+	8200 2600 8200 2800
+$Comp
+L power:+3.3V #PWR0173
+U 1 1 60D52A62
+P 9000 2725
+F 0 "#PWR0173" H 9000 2575 50  0001 C CNN
+F 1 "+3.3V" H 9015 2898 50  0000 C CNN
+F 2 "" H 9000 2725 50  0001 C CNN
+F 3 "" H 9000 2725 50  0001 C CNN
+	1    9000 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2800 9000 2800
+Wire Wire Line
+	9000 2800 9000 2725
+Wire Wire Line
+	8050 2950 8050 3000
+Wire Wire Line
+	6325 4850 6325 4900
+Wire Wire Line
+	6325 5950 6325 5900
+$Comp
+L power:GND #PWR0175
+U 1 1 60D52A01
+P 6325 5950
+F 0 "#PWR0175" H 6325 5700 50  0001 C CNN
+F 1 "GND" H 6330 5777 50  0000 C CNN
+F 2 "" H 6325 5950 50  0001 C CNN
+F 3 "" H 6325 5950 50  0001 C CNN
+	1    6325 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:SRV05-4 U3
+U 1 1 60D529F9
+P 6325 5400
+F 0 "U3" H 6075 5875 50  0000 C CNN
+F 1 "SRV05-4" H 6550 5925 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7025 4950 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 6325 5400 50  0001 C CNN
+	1    6325 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 4250 7225 4250
+Wire Wire Line
+	7125 4050 7225 4050
+Text GLabel 7225 4250 2    50   Input ~ 0
+USBD_N
+Text GLabel 7225 4050 2    50   Input ~ 0
+USBD_P
+$Comp
+L Device:R R14
+U 1 1 60D529C1
+P 6975 4050
+F 0 "R14" V 6875 4050 50  0000 C CNN
+F 1 "22R" V 6975 4050 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 6905 4050 50  0001 C CNN
+F 3 "~" H 6975 4050 50  0001 C CNN
+	1    6975 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 60D529BB
+P 6975 4250
+F 0 "R15" V 6900 4250 50  0000 C CNN
+F 1 "22R" V 6975 4250 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 6905 4250 50  0001 C CNN
+F 3 "~" H 6975 4250 50  0001 C CNN
+	1    6975 4250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Iron_Coupled_1423 L1
+U 1 1 60DDC17D
+P 6300 4150
+F 0 "L1" H 6025 4150 50  0000 C CNN
+F 1 "L_Core_Iron_Coupled_1423" H 7000 4450 50  0000 C CNN
+F 2 "custom_footprint_library:SMM2012E" H 6300 4150 50  0001 C CNN
+F 3 "~" H 6300 4150 50  0001 C CNN
+	1    6300 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4050 6550 4050
+$Comp
+L Device:R R13
+U 1 1 60DDF643
+P 6300 4350
+F 0 "R13" V 6225 4350 50  0000 C CNN
+F 1 "OPT" V 6300 4350 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 6230 4350 50  0001 C CNN
+F 3 "~" H 6300 4350 50  0001 C CNN
+	1    6300 4350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 60DDFB5E
+P 6300 3925
+F 0 "R12" V 6400 3925 50  0000 C CNN
+F 1 "OPT" V 6300 3925 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 6230 3925 50  0001 C CNN
+F 3 "~" H 6300 3925 50  0001 C CNN
+	1    6300 3925
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6150 4350 6075 4350
+Wire Wire Line
+	6075 4350 6075 4250
+Wire Wire Line
+	6075 4250 6100 4250
+Wire Wire Line
+	6500 4250 6550 4250
+Wire Wire Line
+	6450 4350 6550 4350
+Wire Wire Line
+	6550 4350 6550 4250
+Connection ~ 6550 4250
+Wire Wire Line
+	6550 4050 6550 3925
+Wire Wire Line
+	6550 3925 6450 3925
+Connection ~ 6550 4050
+Wire Wire Line
+	6150 3925 6075 3925
+Wire Wire Line
+	6075 3925 6075 4050
+Wire Wire Line
+	6075 4050 6100 4050
+Text Notes 7950 2050 0    50   ~ 0
+5V to 3V3 LDO\n200mA
+Wire Wire Line
+	4650 4050 5575 4050
+Wire Wire Line
+	4650 4250 5450 4250
+Wire Wire Line
+	5575 4050 5575 5300
+Wire Wire Line
+	5575 5300 5825 5300
+Wire Wire Line
+	5825 5500 5450 5500
+Wire Wire Line
+	5450 5500 5450 4250
+NoConn ~ 6825 5300
+NoConn ~ 6825 5500
+Wire Wire Line
+	5475 3200 5475 3150
+Wire Wire Line
+	5475 3500 5475 3550
+Wire Wire Line
+	3225 4650 3225 4600
+Wire Wire Line
+	2775 4650 2775 4600
+$Comp
+L power:VBUS #PWR?
+U 1 1 60E2AA62
+P 3225 4600
+AR Path="/60E2AA62" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60E2AA62" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60E2AA62" Ref="#PWR0178"  Part="1" 
+F 0 "#PWR0178" H 3225 4450 50  0001 C CNN
+F 1 "VBUS" H 3240 4773 50  0000 C CNN
+F 2 "" H 3225 4600 50  0001 C CNN
+F 3 "" H 3225 4600 50  0001 C CNN
+	1    3225 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 60E2AA68
+P 2775 4600
+AR Path="/60E2AA68" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60E2AA68" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60E2AA68" Ref="#PWR0179"  Part="1" 
+F 0 "#PWR0179" H 2775 4450 50  0001 C CNN
+F 1 "VBUS" H 2790 4773 50  0000 C CNN
+F 2 "" H 2775 4600 50  0001 C CNN
+F 3 "" H 2775 4600 50  0001 C CNN
+	1    2775 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E2AA7C
+P 3225 4800
+AR Path="/60E2AA7C" Ref="C?"  Part="1" 
+AR Path="/60D44BDB/60E2AA7C" Ref="C?"  Part="1" 
+AR Path="/60D99CF5/60E2AA7C" Ref="C18"  Part="1" 
+F 0 "C18" H 3340 4846 50  0000 L CNN
+F 1 "1uF" H 3340 4755 50  0000 L CNN
+F 2 "Capacitor_smd:C_0603_1608Metric" H 3263 4650 50  0001 C CNN
+F 3 "~" H 3225 4800 50  0001 C CNN
+	1    3225 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E2AA82
+P 2775 4800
+AR Path="/60E2AA82" Ref="C?"  Part="1" 
+AR Path="/60D44BDB/60E2AA82" Ref="C?"  Part="1" 
+AR Path="/60D99CF5/60E2AA82" Ref="C17"  Part="1" 
+F 0 "C17" H 2890 4846 50  0000 L CNN
+F 1 "10uF" H 2890 4755 50  0000 L CNN
+F 2 "Capacitor_smd:C_0603_1608Metric" H 2813 4650 50  0001 C CNN
+F 3 "~" H 2775 4800 50  0001 C CNN
+	1    2775 4800
+	1    0    0    -1  
+$EndComp
+Text Notes 2725 4275 0    50   ~ 0
+VBUS Decoupling
+$Comp
+L power:VBUS #PWR0174
+U 1 1 60FA6CB5
+P 6325 4850
+F 0 "#PWR0174" H 6325 4700 50  0001 C CNN
+F 1 "VBUS" H 6340 5023 50  0000 C CNN
+F 2 "" H 6325 4850 50  0001 C CNN
+F 3 "" H 6325 4850 50  0001 C CNN
+	1    6325 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E2AA5A
+P 5475 3350
+AR Path="/60E2AA5A" Ref="C?"  Part="1" 
+AR Path="/60D44BDB/60E2AA5A" Ref="C?"  Part="1" 
+AR Path="/60D99CF5/60E2AA5A" Ref="C19"  Part="1" 
+F 0 "C19" H 5590 3396 50  0000 L CNN
+F 1 "100nF" H 5590 3305 50  0000 L CNN
+F 2 "Capacitor_smd:C_0603_1608Metric" H 5513 3200 50  0001 C CNN
+F 3 "~" H 5475 3350 50  0001 C CNN
+	1    5475 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E2AA54
+P 5475 3550
+AR Path="/60E2AA54" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60E2AA54" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60E2AA54" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 5475 3300 50  0001 C CNN
+F 1 "GND" H 5480 3377 50  0000 C CNN
+F 2 "" H 5475 3550 50  0001 C CNN
+F 3 "" H 5475 3550 50  0001 C CNN
+	1    5475 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E2AA4C
+P 5175 3100
+AR Path="/60E2AA4C" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60E2AA4C" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60E2AA4C" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 5175 2950 50  0001 C CNN
+F 1 "+5V" H 5190 3273 50  0000 C CNN
+F 2 "" H 5175 3100 50  0001 C CNN
+F 3 "" H 5175 3100 50  0001 C CNN
+	1    5175 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 5050 3225 5050
+Wire Wire Line
+	2775 4950 2775 5050
+Wire Wire Line
+	3225 4950 3225 5050
+Connection ~ 3225 5050
+Wire Wire Line
+	5575 4050 5800 4050
+Wire Wire Line
+	5800 4050 5800 4350
+Wire Wire Line
+	5800 4350 6075 4350
+Connection ~ 5575 4050
+Connection ~ 6075 4350
+Wire Wire Line
+	5450 4250 5925 4250
+Wire Wire Line
+	5925 4250 5925 4050
+Wire Wire Line
+	5925 4050 6075 4050
+Connection ~ 5450 4250
+Connection ~ 6075 4050
+Wire Wire Line
+	6550 4050 6825 4050
+Wire Wire Line
+	6550 4250 6825 4250
+Text Label 6700 4050 0    50   ~ 0
+D+
+Text Label 6700 4250 0    50   ~ 0
+D-
+$Comp
+L Device:Ferrite_Bead FB3
+U 1 1 60DECA32
+P 4950 3250
+F 0 "FB3" V 4700 3150 50  0000 C CNN
+F 1 "Ferrite_Bead" V 4775 3175 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 4880 3250 50  0001 C CNN
+F 3 "~" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3250 5175 3250
+Connection ~ 5175 3250
+Wire Wire Line
+	5175 3250 5175 3500
+Wire Wire Line
+	4800 3250 4725 3250
+Wire Wire Line
+	4725 3250 4725 3500
+Connection ~ 4725 3500
+Wire Wire Line
+	4725 3500 4775 3500
+Wire Wire Line
+	3225 5050 3650 5050
+Wire Wire Line
+	3650 5050 3950 5050
+Connection ~ 3650 5050
+Wire Wire Line
+	3650 5000 3650 5050
+Wire Wire Line
+	5175 3100 5175 3150
+Wire Wire Line
+	5175 3150 5475 3150
+Connection ~ 5175 3150
+Wire Wire Line
+	5175 3150 5175 3250
+Text Notes 6675 4775 0    50   ~ 0
+ESD Protection
+$Comp
+L Device:R R?
+U 1 1 60F909D6
+P 9600 2850
+AR Path="/60F909D6" Ref="R?"  Part="1" 
+AR Path="/60D44BDB/60F909D6" Ref="R?"  Part="1" 
+AR Path="/60D99CF5/60F909D6" Ref="R?"  Part="1" 
+F 0 "R?" V 9525 2850 50  0000 C CNN
+F 1 "330R" V 9600 2850 50  0000 C CNN
+F 2 "resistor_smd:R_0603_1608Metric" V 9530 2850 50  0001 C CNN
+F 3 "~" H 9600 2850 50  0001 C CNN
+	1    9600 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F909DC
+P 9600 3050
+AR Path="/60F909DC" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60F909DC" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60F909DC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9600 2800 50  0001 C CNN
+F 1 "GND" H 9605 2877 50  0000 C CNN
+F 2 "" H 9600 3050 50  0001 C CNN
+F 3 "" H 9600 3050 50  0001 C CNN
+	1    9600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60F909E2
+P 9600 2500
+AR Path="/60F909E2" Ref="D?"  Part="1" 
+AR Path="/60D44BDB/60F909E2" Ref="D?"  Part="1" 
+AR Path="/60D99CF5/60F909E2" Ref="D?"  Part="1" 
+F 0 "D?" V 9639 2382 50  0000 R CNN
+F 1 "LED" V 9548 2382 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 9600 2500 50  0001 C CNN
+F 3 "~" H 9600 2500 50  0001 C CNN
+	1    9600 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60F909E8
+P 9600 2300
+AR Path="/60F909E8" Ref="#PWR?"  Part="1" 
+AR Path="/60D44BDB/60F909E8" Ref="#PWR?"  Part="1" 
+AR Path="/60D99CF5/60F909E8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9600 2150 50  0001 C CNN
+F 1 "+3.3V" H 9615 2473 50  0000 C CNN
+F 2 "" H 9600 2300 50  0001 C CNN
+F 3 "" H 9600 2300 50  0001 C CNN
+	1    9600 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 9475 2000 0    50   ~ 0
+Power LED
+Wire Wire Line
+	9600 3000 9600 3050
+Wire Wire Line
+	9600 2300 9600 2350
+Wire Wire Line
+	9600 2650 9600 2700
+Wire Notes Line
+	7875 1825 9925 1825
+Wire Notes Line
+	9925 1825 9925 3325
+Wire Notes Line
+	9925 3325 7875 3325
+Wire Notes Line
+	7875 3325 7875 1825
+$EndSCHEMATC
