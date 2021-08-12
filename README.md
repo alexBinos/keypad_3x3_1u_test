@@ -23,9 +23,8 @@ Sharing progress on the 3x3 macro keypad...
 <br/>
 
 3. Entering the bootloader
-   - Normally the bootloader is entered after reset when the nHWBE pin is pulled low.
-   - On this design the nHWBE was connected to column 0 of the switch matrix.
-   - In theory, disabling the HWBE fuse and enabling the BOOTRST fuse should fix this problem (untested).
+   - Through the ISP interface, disable the HWBE fuse and enable the BOOTRST fuse.
+   - Flash the Caterina bootloader
    - See section 27 of the ATMEGA32U4 datasheet for more details.
 
 <br/>
